@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.cdnfonts.com/css/karmatic-arcade"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Guess The Number 🤔</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="heading">GUESS THE NUMBER</h1>
+      <span class="hidden-number">?</span>
+    </header>
+
+    <!-- Game Section -->
+    <section class="game">
+      <!-- Left Section -->
+      <div class="left">
+        <div class="left-wrapper">
+          <h3 class="score-heading">SCORE</h3>
+          <div class="rank-info">
+            <img src="/images/rank.svg" alt="rank" />
+            <p class="score">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Section -->
+      <div class="middle">
+        <h3 class="game-info">1-20</h3>
+
+        <div class="user-input">
+          <input
+            class="input"
+            type="number"
+            min="1"
+            max="20"
+            step="1"
+            value=""
+          />
+          <div class="game-cta">
+            <button class="try">TRY</button>
+            <button class="clear">
+              <img src="/images/clear.svg" alt="clear" />
+            </button>
+            <img
+              class="reload primary-reload"
+              src="/images/reload-2.svg"
+              alt="reload"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right">
+        <div class="right-wrapper">
+          <h3 class="highscore-heading">HIGHSCORE</h3>
+          <div class="highscore-info">
+            <img src="/images/trophy.svg" alt="trophy" />
+            <p class="highscore">0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <img
+        class="reload secondary-reload"
+        src="/images/reload.svg"
+        alt="reload"
+      />
+      <a href="#"><h3 class="made-by">G.R</h3></a>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
